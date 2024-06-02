@@ -29,7 +29,7 @@ SECRET_KEY = 'pl-l5m)bl#uhtg^c!9ehaahrz8b3r)iesls09vb3jdj6l!oq4('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','sagevaccine.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','sagevaccine.herokuapp.com','.vercel.app','.now.sh']
 
 
 # Application definition
@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'staticdir')
 ]
-STATIC_ROOT=os.path.join(BASE_DIR,'mystatic')
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')
 
 MESSAGE_TAGS= {
     messages.ERROR:'danger'
